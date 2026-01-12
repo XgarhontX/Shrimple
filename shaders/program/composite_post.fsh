@@ -32,6 +32,12 @@ uniform bool hideGUI;
 #include "/lib/post/tonemap.glsl"
 #include "/lib/post/exposure.glsl"
 
+//#define RENODX_UPGRADE_ENABLED
+#define RENODX_SCALING_DEFAULT RENODX_SCALING_PERCHANNEL
+#define RENODX_WORKING_COLORSPACE RENODX_BT709
+#define RENODX_SCALING_DEFAULT RENODX_SCALING_PERCHANNEL
+#define RENODX_HDRTONEMAP_TYPE_DEFAULT RENODX_HDRTONEMAP_TYPE_ACES
+#include "/renodx.glsl"
 
 // borrowed from seus renewed
 void ApplyVignette(inout vec3 color, const in vec2 texcoord) {
@@ -54,12 +60,13 @@ void main() {
 
     ApplyPostGrading(color);
 
-    ApplyPostTonemap(color);
+    // ApplyPostTonemap(color); //TODO: Upgrade
 
-    color = LinearToRGB(color, GAMMA_OUT);
+    color.rgb = ToneMapPass(color.rgb, vec3(0), texcoord);
+    // color = sign(color) * LinearToRGB(abs(color), GAMMA_OUT);
 
-    float dither = GetScreenBayerValue(ivec2(2,1));
-    color += (dither - 0.5) / 255.0;
+    // float dither = GetScreenBayerValue(ivec2(2,1));
+    // color += (dither - 0.5) / 255.0;
 
     outFinal = color;
 }
