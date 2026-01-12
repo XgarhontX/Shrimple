@@ -1,4 +1,6 @@
-# Shrimple [shader]
+# Shrimple HDR [shader]
+
+[![Minecraft-1-21-1-Singleplayer-2026-01-12-10:55:43.png](https://i.postimg.cc/x8SP7pMF/Minecraft-1-21-1-Singleplayer-2026-01-12-10:55:43.png)](https://postimg.cc/MMdRfDsy)
 
 A Minecraft Java shader that attempts to maintain a minimal "vanilla" aesthetic, while adding some optional features:
  - Waving Plants.
