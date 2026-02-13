@@ -33,7 +33,7 @@ void main() {
 		vec3 color = FXAA(texcoord);
 		FXAA_IS_NOT_SUPPORTED;
 	#else
-		vec3 color = RCASRenoDX(colortex0, ivec2(gl_FragCoord.xy), RENODX_RCAS / 100.f, 1.f, RENODX_GAMMA_NONE, RENODX_CS_BT709);
+		vec3 color = RCASRenoDX(colortex0, ivec2(gl_FragCoord.xy), RENODX_RCAS / 100.f, 1.f, RENODX_GAMMA_NONE, RENODX_WORKINGCS_AFTERTONEMAP);
 	#endif
 
   // color = sign(color) * LinearToRGB(abs(color), GAMMA_OUT);
