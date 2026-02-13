@@ -32,11 +32,6 @@ uniform bool hideGUI;
 #include "/lib/post/tonemap.glsl"
 #include "/lib/post/exposure.glsl"
 
-//#define RENODX_UPGRADE_ENABLED
-#define RENODX_SCALING_DEFAULT RENODX_SCALING_PERCHANNEL
-#define RENODX_WORKING_COLORSPACE RENODX_BT709
-#define RENODX_SCALING_DEFAULT RENODX_SCALING_PERCHANNEL
-#define RENODX_HDRTONEMAP_TYPE_DEFAULT RENODX_HDRTONEMAP_TYPE_ACES
 #include "/renodx.glsl"
 
 // borrowed from seus renewed
