@@ -1,6 +1,12 @@
-# Shrimple HDR [shader]
+<h1 align = "center">HDR Installation</h1>
 
-[![Minecraft-1-21-1-Singleplayer-2026-01-12-10:55:43.png](https://i.postimg.cc/x8SP7pMF/Minecraft-1-21-1-Singleplayer-2026-01-12-10:55:43.png)](https://postimg.cc/MMdRfDsy)
+* [Google Docs (Requiring SpecialK and ReShade)](https://docs.google.com/document/d/1obuYnRTlaqUpiqBq2P6V-_eXvRaSgTB6qboJaC4Fojk/edit?usp=sharing)
+
+[![Screenshot](https://i.postimg.cc/x8SP7pMF/Minecraft-1-21-1-Singleplayer-2026-01-12-10:55:43.png)](https://postimg.cc/MMdRfDsy)
+
+<br>
+
+# Shrimple [shader]
 
 A Minecraft Java shader that attempts to maintain a minimal "vanilla" aesthetic, while adding some optional features:
  - Waving Plants.
