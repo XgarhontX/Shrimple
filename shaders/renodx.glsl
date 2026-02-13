@@ -8,9 +8,9 @@
 
 //Color space expected for each step
 #define RENODX_WORKINGCS_SHADERPACK RENODX_CS_BT709 /* Internal working color space of shaderpack. */
-#define RENODX_WORKINGCS_AFTERTONEMAP RENODX_CS_BT709 /* Colorspace to encode leaving ToneMapPass(). */
 #define RENODX_WORKINGCS_HDRTONEMAP RENODX_CS_BT709 //[RENODX_CS_BT709 RENODX_CS_BT2020 RENODX_CS_AP1] /* Colorspace to do perchannel HDR tonemap. */
-#define RENODX_WORKINGCS_AFTERTONEMAP_DOCLAMP 1 /* Clamp after ToneMapPass? */
+#define RENODX_WORKINGCS_AFTERTONEMAP RENODX_CS_BT709 /* Colorspace to encode leaving ToneMapPass(). */
+#define RENODX_WORKINGCS_AFTERTONEMAP_DOCLAMP 0 /* Clamp after ToneMapPass? */
 #define RENODX_WORKINGCS_RENDERINTERMEDIATEPASSINPUT RENODX_CS_BT709 /* Colorspace to decolde entering RenderIntermediatePass(). */
 
 //Gamma encoding expected for each step
